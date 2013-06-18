@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<!--
+  Product:        Social - Premium Responsive Admin Template
+  Version:        v1.3.1
+  Copyright:      2013 CesarLab.com
+  License:        http://themeforest.net/licenses
+  Live Preview:   http://go.cesarlab.com/SocialAdminTemplate
+  Purchase:       http://go.cesarlab.com/PurchaseSocial
+-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Social - Premium Responsive Admin Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link rel="shortcut icon" href="../../assets/img/favicon.ico?v1.3.1" />
+  <link rel="icon" type="image/gif" href="../../assets/img/favicon.gif?v1.3.1">
+
+  <!-- BEGIN STYLE CODES -->
+  <link href="../../assets/css/twitter-bootstrap/bootstrap.css?v1.3.1" rel="stylesheet">
+  <link href="../../assets/css/social-jquery-ui-1.10.0.custom.css?v1.3.1" rel="stylesheet">
+  <link href="../../assets/css/social.css?v1.3.1" rel="stylesheet">
+  <link href="../../assets/css/social.plugins.css?v1.3.1" rel="stylesheet">
+  <link href="../../assets/css/font-awesome.css?v1.3.1" rel="stylesheet">
+  <link href="../../assets/css/social-coloredicons-buttons.css?v1.3.1" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/templates/social/assets/css/social-jquery.ui.1.10.0.ie.css"/>
+    <![endif]-->
+
+    <!-- BEGIN STYLE CODE FOR THE CURRENT PAGE -->
+    <link href="../../assets/css/plugins/fuelux.css?v1.3.1" rel="stylesheet">
+    <!-- END STYLE CODE FOR THE CURRENT PAGE -->
+    <link href="../../assets/css/demo.css?v1.3.1" rel="stylesheet">
+    <link href="../../assets/plugins/jquery.uipro/style.css?v1.3.1" rel="stylesheet">
+    <link href="../../assets/plugins/jquery.simplecolorpicker/jquery.simplecolorpicker.css?v1.3.1" rel="stylesheet">
+    <link href="../../assets/css/themes/social.theme-blue.css?v1.3.1" rel="stylesheet" id="theme">
+    <link href="../../assets/css/twitter-bootstrap/bootstrap-responsive.css?v1.3.1" rel="stylesheet">
+    <!-- BEGIN STYLE CODE FOR THE CURRENT PAGE -->
+    <!-- END STYLE CODE FOR THE CURRENT PAGE -->
+
+    <style>
+    .wraper #main{
+      margin-top: 40px;
+    }
+    </style>
+    <!-- END STYLE CODES -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/templates/social/assets/plugins/html5shiv.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+      <!-- BEGIN WRAPER -->
+      <div class="wraper sidebar-full">
+        <!-- BEGIN SIDEBAR -->
+        <aside class="social-sidebar sidebar-full">
+          <!-- BEGIN USER SETTINGS -->
+          <div class="user-settings">
+            <div class="arrow"></div>
+            <h3 class="user-settings-title">Settings shortcuts</h3>
+            <div class="user-settings-content">
+              <a href="../pages/basic-user-profile.html">
+                <div class="icon">
+                  <i class="icon-user"></i>
+                </div>
+                <div class="title">My Profile</div>
+                <div class="content">View your profile</div>
+              </a>
+              <a href="../pages/chat-inbox.html">
+                <div class="icon">
+                  <i class="icon-envelope"></i>
+                </div>
+                <div class="title">View Messages</div>
+                <div class="content">You have <strong>17</strong> new messages</div>
+              </a>
+              <a href="#view-pending-tasks">
+                <div class="icon">
+                  <i class="icon-tasks"></i>
+                </div>
+
+                <div class="title">View Tasks</div>
+                <div class="content">You have <strong>8</strong> pending tasks</div>
+              </a>
+            </div>
+            <div class="user-settings-footer">
+              <a href="#more-settings">See more settings</a>
+            </div>
+          </div>
+          <!-- END USER SETTINGS -->
+          <!-- BEGIN SIDEBAR CONTENT -->
+          <div class="social-sidebar-content">
+            <div class="scrollable">
+              <!-- BEGIN USER INFO SECTION -->
+              <div class="user">
+                <img class="avatar" width="25" height="25" src="../../assets/img/avatar-30.png" alt="Julio Marquez">
+                <span>Julio Marquez</span>
+                <i class="icon-user trigger-user-settings"></i>
+              </div>
+              <!-- END USER INFO SECTION -->
+              <!-- BEGIN NAVIGATION CONTROLS -->
+              <div class="navigation-sidebar">
+                <i class="switch-sidebar-icon icon-align-justify"></i>
+              </div>
+              <!-- END NAVIGATION CONTROLS -->
+              <!-- BEGIN SEARCH SIDEBAR FORM -->
+              <div class="search-sidebar">
+                <img src="../../assets/img/icons/stuttgart-icon-pack/32x32/search.png" alt="Search">
+                <form class="search-sidebar-form">
+                  <input type="text" class="search-query input-block-level" placeholder="Search">
+                </form>
+              </div>
+              <!-- END SEARCH SIDEBAR FORM -->
+              <!-- BEGIN MENU SECTION -->
+              <section class="menu">
+                <!-- BEGIN ACCORDION SECTION -->
+                <div class="accordion" id="accordion2">
+
+                  <!-- BEGIN ACCORDION GROUP -->
+                  <div class="accordion-group ">
+                    <!-- BEGIN ACCORDION HEADING -->
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle " href="../dashboard.html">
+                        <img src="../../assets/img/icons/stuttgart-icon-pack/32x32/home.png" alt="Dashboard">
+                        <span>Dashboard </span><span class="badge">9</span>
+                      </a>
+                    </div>
+                    <!-- END ACCORDION HEADING -->
+                  </div>
+                  <!-- END ACCORDION GROUP -->
+
+                  <!-- BEGIN ACCORDION GROUP -->
+                  <div class="accordion-group ">
+                    <!-- BEGIN ACCORDION HEADING -->
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle " data-toggle="collapse" data-parent="#accordion2" href="#collapse-ui-elements">
+                        <img src="../../assets/img/icons/stuttgart-icon-pack/32x32/database.png" alt="UI Elements">
+                        <span>UI Elements </span><span class="arrow"></span>
+                      </a>
+                    </div>
+                    <!-- END ACCORDION HEADING -->
+                    <!-- BEGIN MENU LIST ITEMS -->
+                    <ul id="collapse-ui-elements" class="accordion-body nav nav-list collapse ">
+                      <li><a href="../ui-elements/general.html">General</a></li>
+                      <li><a href="../ui-elements/jquery-ui.html">jQuery UI</a></li>
+                      <li><a href="../ui-elements/buttons.html">Buttons</a></li>
+                      <li><a href="../ui-elements/social-boxes.html">Social Boxes</a></li>
+                      <li><a href="../ui-elements/extra-plugins.html">Extra Plugins</a></li>
+                      <li><a href="../ui-elements/tabs-accordions.html">Tabs &amp; Accordions</a></li>
+                      <li><a href="../ui-elements/typography.html">Typography</a></li>
+                    </ul>
+                    <!-- END MENU LIST ITEMS -->
+                  </div>
+                  <!-- END ACCORDION GROUP -->
+
+                  <!-- BEGIN ACCORDION GROUP -->
+                  <div class="accordion-group active">
+                    <!-- BEGIN ACCORDION HEADING -->
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle opened" data-toggle="collapse" data-parent="#accordion2" href="#collapse-form-stuff">
+                        <img src="../../assets/img/icons/stuttgart-icon-pack/32x32/sitemap.png" alt="Form Stuff">
+                        <span>Form Stuff </span><span class="arrow"></span>
+                      </a>
+                    </div>
+                    <!-- END ACCORDION HEADING -->
+                    <!-- BEGIN MENU LIST ITEMS -->
+                    <ul id="collapse-form-stuff" class="accordion-body nav nav-list collapse in">
+                      <li><a href="elements.html">Form elements</a></li>
+                      <li><a href="validation.html">Form validation</a></li>
+                      <li class="active"><a href="wizards.html">Wizards</a></li>
+                      <li><a href="wysiwyg.html">WYSIWYG</a></li>
+                    </ul>
+                    <!-- END MENU LIST ITEMS -->
+                  </div>
+                  <!-- END ACCORDION GROUP -->
+
+                  <!-- BEGIN ACCORDION GROUP -->
+                  <div class="accordion-group  hidden-desktop">
+                    <!-- BEGIN ACCORDION HEADING -->
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle " data-toggle="collapse" data-parent="#accordion2" href="#collapse-pages">
+                        <img src="../../assets/img/icons/stuttgart-icon-pack/32x32/star.png" alt="Pages">
+                        <span>Pages </span><span class="arrow"></span>
+                      </a>
+                    </div>
+                    <!-- END ACCORDION HEADING -->
+                    <!-- BEGIN MENU LIST ITEMS -->
+                    <ul id="collapse-pages" class="accordion-body nav nav-list collapse ">
+                      <li><a href="../pages/facebook-timeline.html">Facebook Timeline</a></li>
+                      <li><a href="../pages/basic-user-profile.html">Basic User Profile</a></li>
+                      <li><a href="../pages/chat-inbox.html">Chat Inbox</a></li>
+                      <li><a href="../pages/pricing-tables.html">Pricing Tables</a></li>
+                      <li><a href="../pages/email-templates.html">Email Templates</a></li>
+                      <li><a href="../pages/email-inbox.html">Email Inbox</a></li>
+                      <li><a href="../pages/search-results.html">Search Results</a></li>
+                      <li><a href="../pages/blog-category.html">Blog Category</a></li>
+                      <li><a href="../pages/blog-page.html">Blog Page</a></li>
+                      <li><a href="../pages/contact-us.html">Contact Us</a></li>
+                      <li><a href="../pages/404-page.html">404 Page</a></li>
+                      <li><a href="../pages/500-page.html">500 Page</a></li>
+                      <li><a href="../pages/invoice.html">Invoice</a></li>
+                      <li><a href="../pages/login.html">Login</a></li>
+                      <li><a href="../pages/faq.html">FAQ</a></li>
+                      <li><a href="../pages/features-page.html">Features Page</a></li>
+                      <li><a href="../pages/shop-category.html">Shop Category</a></li>
+                      <li><a href="../pages/shop-index.html">Shop Index</a></li>
+                    </ul>
+                    <!-- END MENU LIST ITEMS -->
+                  </div>
+                  <!-- END ACCORDION GROUP -->
+
+                  <!-- BEGIN ACCORDION GROUP -->
+                  <div class="accordion-group  hidden-desktop">
+                    <!-- BEGIN ACCORDION HEADING -->
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle " data-toggle="collapse" data-parent="#accordion2" href="#collapse-layouts">
+                        <img src="../../assets/img/icons/stuttgart-icon-pack/32x32/archives.png" alt="Layouts">
+                        <span>Layouts </span><span class="arrow"></span>
+                      </a>
+                    </div>
+                    <!-- END ACCORDION HEADING -->
+                    <!-- BEGIN MENU LIST ITEMS -->
+                    <ul id="collapse-layouts" class="accordion-body nav nav-list collapse ">
+                      <li><a href="../layouts/blank-page.html">Blank Page</a></li>
+                      <li><a href="../layouts/full-width-page.html">Full Width Page</a></li>
+                      <li><a href="../layouts/expanded-sidebar.html">Expanded Sidebar</a></li>
+                      <li><a href="../layouts/sticky-footer.html">Sticky footer</a></li>
+                      <li><a href="../layouts/auto-hide-sidebar.html">Auto-Hide Sidebar</a></li>
+                    </ul>
+                    <!-- END MENU LIST ITEMS -->
+                  </div>
+                  <!-- END ACCORDION GROUP -->
+
+                  <!-- BEGIN ACCORDION GROUP -->
+                  <div class="accordion-group ">
+                    <!-- BEGIN ACCORDION HEADING -->
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle " href="../charts.html">
+                        <img src="../../assets/img/icons/stuttgart-icon-pack/32x32/statistics.png" alt="Charts">
+                        <span>Charts </span><span class="badge">4</span>
+                      </a>
+                    </div>
+                    <!-- END ACCORDION HEADING -->
+                  </div>
+                  <!-- END ACCORDION GROUP -->
+
+                  <!-- BEGIN ACCORDION GROUP -->
+                  <div class="accordion-group ">
+                    <!-- BEGIN ACCORDION HEADING -->
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle " data-toggle="collapse" data-parent="#accordion2" href="#collapse-tables">
+                        <img src="../../assets/img/icons/stuttgart-icon-pack/32x32/invoice.png" alt="Tables">
+                        <span>Tables </span><span class="arrow"></span>
+                      </a>
+                    </div>
+                    <!-- END ACCORDION HEADING -->
+                    <!-- BEGIN MENU LIST ITEMS -->
+                    <ul id="collapse-tables" class="accordion-body nav nav-list collapse ">
+                      <li><a href="../tables/basic.html">Basic tables</a></li>
+                      <li><a href="../tables/dynamic.html">Dynamic tables</a></li>
+                      <li><a href="../tables/responsive.html">Responsive Tables</a></li>
+                      <li><a href="../tables/jquery.html">jQuery Style</a></li>
+                    </ul>
+                    <!-- END MENU LIST ITEMS -->
+                  </div>
+                  <!-- END ACCORDION GROUP -->
+
+                  <!-- BEGIN ACCORDION GROUP -->
+                  <div class="accordion-group ">
+                    <!-- BEGIN ACCORDION HEADING -->
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle " data-toggle="collapse" data-parent="#accordion2" href="#collapse-files-media">
+                        <img src="../../assets/img/icons/stuttgart-icon-pack/32x32/photography.png" alt="Files &amp; Media">
+                        <span>Files &amp; Media </span><span class="arrow"></span>
+                      </a>
+                    </div>
+                    <!-- END ACCORDION HEADING -->
+                    <!-- BEGIN MENU LIST ITEMS -->
+                    <ul id="collapse-files-media" class="accordion-body nav nav-list collapse ">
+                      <li><a href="../files-media/gallery.html">Gallery</a></li>
+                      <li><a href="../files-media/file-uploaders.html">File Uploaders</a></li>
+                    </ul>
+                    <!-- END MENU LIST ITEMS -->
+                  </div>
+                  <!-- END ACCORDION GROUP -->
+
+                  <!-- BEGIN ACCORDION GROUP -->
+                  <div class="accordion-group ">
+                    <!-- BEGIN ACCORDION HEADING -->
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle " href="../calendar.html">
+                        <img src="../../assets/img/icons/stuttgart-icon-pack/32x32/calendar.png" alt="Calendar">
+                        <span>Calendar </span><span class="badge">1</span>
+                      </a>
+                    </div>
+                    <!-- END ACCORDION HEADING -->
+                  </div>
+                  <!-- END ACCORDION GROUP -->
+
+                  <!-- BEGIN ACCORDION GROUP -->
+                  <div class="accordion-group ">
+                    <!-- BEGIN ACCORDION HEADING -->
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle " data-toggle="collapse" data-parent="#accordion2" href="#collapse-maps">
+                        <img src="../../assets/img/icons/stuttgart-icon-pack/32x32/world.png" alt="Maps">
+                        <span>Maps </span><span class="arrow"></span>
+                      </a>
+                    </div>
+                    <!-- END ACCORDION HEADING -->
+                    <!-- BEGIN MENU LIST ITEMS -->
+                    <ul id="collapse-maps" class="accordion-body nav nav-list collapse ">
+                      <li><a href="../maps/vector.html">Vector Maps</a></li>
+                      <li><a href="../maps/google.html">Google Maps</a></li>
+                    </ul>
+                    <!-- END MENU LIST ITEMS -->
+                  </div>
+                  <!-- END ACCORDION GROUP -->
+                </div>
+                <!-- END ACCORDION SECTION -->
+              </section>
+              <!-- END MENU SECTION -->
+
+            </div>
+            <!-- BEGIN CHAT USERS LIST -->
+            <div class="chat-users">
+              <div class="no-user">User not found</div>
+              <ul class="user-list">
+                <li>
+                  <a data-firstname="Cesar" data-lastname="Mendoza" data-status="online" data-userid="1" href="#">
+                    <img src="../../assets/img/people-face/user2_22.jpg" alt="">
+                    <span>Cesar Mendoza</span>
+                    <i class="icon-circle user-status online"></i>
+                  </a>
+                </li>
+                <li>
+                  <a data-firstname="Yadra" data-lastname="Abels" data-status="offline" data-userid="2" href="#">
+                    <img src="../../assets/img/people-face/user1_22.jpg" alt="">
+                    <span>Yadra Abels</span>
+                    <i class="icon-circle user-status offline"></i>
+                  </a>
+                </li>
+                <li>
+                  <a data-firstname="Tobei" data-lastname="Tsumura" data-status="online" data-userid="3" href="#">
+                    <img src="../../assets/img/people-face/user4_22.jpg" alt="">
+                    <span>Tobei Tsumura</span>
+                    <i class="icon-circle user-status online"></i>
+                  </a>
+                </li>
+                <li>
+                  <a data-firstname="John" data-lastname="Doe" data-status="offline" data-userid="4" href="#">
+                    <img src="../../assets/img/people-face/user3_22.jpg" alt="">
+                    <span>John Doe</span>
+                    <i class="icon-circle user-status offline"></i>
+                  </a>
+                </li>
+              </ul>
+
+
+              <form class="user-filter">
+                <div class="input-prepend open">
+                  <div class="btn-group dropup">
+                    <button class="btn dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon-cog"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-left">
+                      <li><a href="#">Chat Sounds</a></li>
+                      <li><a href="#">Advanced Settings...</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Turn Off Chat</a></li>
+                    </ul>
+                  </div>
+                  <input type="text" class="input-filter" placeholder="Search user...">
+                </div>
+              </form>
+            </div>
+            <!-- END CHAT USERS LIST -->
+          </div>
+          <!-- END SIDEBAR CONTENT -->
+        </aside>
+        <!-- END SIDEBAR -->
+        <header>
+          <!-- BEGIN NAVBAR -->
+          <nav class="navbar navbar-blue navbar-fixed-top social-navbar">
+           <div class="navbar-inner">
+             <div class="container-fluid">
+               <!-- BEGIN SIDEBAR COLLAPSER -->
+               <a class="btn btn-navbar" data-toggle="collapse" data-target=".social-sidebar">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+               </a>
+               <!-- END SIDEBAR COLLAPSER -->
+               <!-- BEGIN BRAND LINK -->
+               <a class="brand" href="../dashboard.html">
+                 Social
+               </a>
+               <!-- END BRAND LINK -->
+               <ul class="nav visible-desktop">
+                <!--  -->
+                <li class="dropdown ">
+                  <a href="#pages" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+
+                    <!--  -->
+                    <li>
+                      <a href="../pages/email-templates.html">Email Templates</a>
+                    </li>
+                    <!--  -->
+                    <!--  -->
+                    <li>
+                      <a href="../pages/search-results.html">Search Results</a>
+                    </li>
+                    <!--  -->
+                    <!--  -->
+                    <li>
+                      <a href="../pages/invoice.html">Invoice</a>
+                    </li>
+                    <!--  -->
+                    <!--  -->
+                    <li>
+                      <a href="../pages/login.html">Login</a>
+                    </li>
+                    <!--  -->
+                    <!--  -->
+                    <li>
+                      <a href="../pages/faq.html">FAQ</a>
+                    </li>
+                    <!--  -->
+                    <li class="dropdown-submenu">
+                      <a tabindex="-1" href="#timelines">Timelines</a>
+                      <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="../pages/facebook-timeline.html">Facebook Timeline</a></li></ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a tabindex="-1" href="#userprofiles">User Profiles</a>
+                        <ul class="dropdown-menu">
+                          <li><a tabindex="-1" href="../pages/basic-user-profile.html">Basic User Profile</a></li></ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#inbox">Inbox</a>
+                          <ul class="dropdown-menu">
+                            <li><a tabindex="-1" href="../pages/chat-inbox.html">Chat Inbox</a></li>
+                            <li><a tabindex="-1" href="../pages/email-inbox.html">Email Inbox</a></li></ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#business">Business</a>
+                            <ul class="dropdown-menu">
+                              <li><a tabindex="-1" href="../pages/pricing-tables.html">Pricing Tables</a></li>
+                              <li><a tabindex="-1" href="../pages/contact-us.html">Contact Us</a></li>
+                              <li><a tabindex="-1" href="../pages/features-page.html">Features Page</a></li></ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                              <a tabindex="-1" href="#blog">Blog</a>
+                              <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="../pages/blog-category.html">Blog Category</a></li>
+                                <li><a tabindex="-1" href="../pages/blog-page.html">Blog Page</a></li></ul>
+                              </li>
+                              <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#errorpages">Error pages</a>
+                                <ul class="dropdown-menu">
+                                  <li><a tabindex="-1" href="../pages/404-page.html">404 Page</a></li>
+                                  <li><a tabindex="-1" href="../pages/500-page.html">500 Page</a></li></ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                  <a tabindex="-1" href="#shop">Shop</a>
+                                  <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="../pages/shop-category.html">Shop Category</a></li>
+                                    <li><a tabindex="-1" href="../pages/shop-index.html">Shop Index</a></li></ul>
+                                  </li>
+                                  <!-- BEGIN MORE OPTIONS -->
+                                  <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="#">More options</a>
+                                    <ul class="dropdown-menu">
+                                      <li><a tabindex="-1" href="#">Second level link</a></li>
+                                      <li><a tabindex="-1" href="#">Second level link</a></li>
+                                      <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">More options</a>
+                                        <ul class="dropdown-menu">
+                                          <li><a tabindex="-1" href="#">Third level link</a></li>
+                                          <li><a tabindex="-1" href="#">Third level link</a></li>
+                                          <li><a tabindex="-1" href="#">Third level link</a></li>
+                                        </ul>
+                                      </li>
+                                      <li><a tabindex="-1" href="#">Second level link</a></li>
+                                    </ul>
+                                  </li>
+                                  <!-- END MORE OPTIONS -->
+                                </ul>
+                              </li>
+                              <li class="dropdown ">
+                                <a href="#layouts" class="dropdown-toggle" data-toggle="dropdown">Layouts <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+
+                                  <!--  -->
+                                  <li>
+                                    <a href="../layouts/blank-page.html" target=&quot;_blank&quot;>Blank Page</a>
+                                  </li>
+                                  <!--  -->
+                                  <!--  -->
+                                  <li>
+                                    <a href="../layouts/full-width-page.html" target=&quot;_blank&quot;>Full Width Page</a>
+                                  </li>
+                                  <!--  -->
+                                  <!--  -->
+                                  <li>
+                                    <a href="../layouts/expanded-sidebar.html" target=&quot;_blank&quot;>Expanded Sidebar</a>
+                                  </li>
+                                  <!--  -->
+                                  <!--  -->
+                                  <li>
+                                    <a href="../layouts/sticky-footer.html" target=&quot;_blank&quot;>Sticky footer</a>
+                                  </li>
+                                  <!--  -->
+                                  <!--  -->
+                                  <li>
+                                    <a href="../layouts/auto-hide-sidebar.html" target=&quot;_blank&quot;>Auto-Hide Sidebar</a>
+                                  </li>
+                                  <!--  -->
+                                </ul>
+                              </li>
+                              <!--  -->        </ul>
+
+                              <!-- BEGIN NAVBAR INDICATORS -->
+                              <ul class="nav pull-right nav-indicators">
+
+
+
+                                <!-- BEGIN DROPDOWN NOTIFICATIONS -->
+                                <li class="dropdown nav-notifications">
+                                  <!-- BEGIN DROPDOWN TOGGLE -->
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="badge">9</span><i class="icon-warning-sign"></i>
+                                  </a>
+                                  <!-- END DROPDOWN TOGGLE -->
+                                  <!-- BEGIN DROPDOWN MENU -->
+                                  <ul class="dropdown-menu">
+                                    <!-- BEGIN DROPDOWN HEADER -->
+                                    <li class="nav-notifications-header">
+                                      <a tabindex="-1" href="#">You have <strong>9</strong> new notifications</a>
+                                    </li>
+                                    <!-- END DROPDOWN HEADER -->
+                                    <!-- BEGIN NOTIFICATION ITEMS -->
+                                    <li class="nav-notification-body text-info">
+                                      <a href="#">
+                                        <i class="icon-user"></i> New User
+                                        <small class="pull-right">Just Now</small>
+                                      </a>
+                                    </li>
+                                    <li class="nav-notification-body text-error">
+                                      <a href="#">
+                                        <i class="icon-user"></i> User Deleted
+                                        <small class="pull-right">Just Now</small>
+                                      </a>
+                                    </li>
+                                    <li class="nav-notification-body text-warning">
+                                      <a href="#">
+                                        <i class="icon-cogs"></i> Sever is overloaded
+                                        <small class="pull-right">2 minutes ago</small>
+                                      </a>
+                                    </li>
+                                    <li class="nav-notification-body">
+                                      <a href="#">
+                                        <i class="icon-briefcase"></i> Backup is completed
+                                        <small class="pull-right">4 minutes ago</small>
+                                      </a>
+                                    </li>
+                                    <li class="nav-notification-body text-info">
+                                      <a href="#">
+                                        <i class="icon-user"></i> New User
+                                        <small class="pull-right">Just Now</small>
+                                      </a>
+                                    </li>
+                                    <li class="nav-notification-body text-error">
+                                      <a href="#">
+                                        <i class="icon-user"></i> User Deleted
+                                        <small class="pull-right">Just Now</small>
+                                      </a>
+                                    </li>
+                                    <li class="nav-notification-body text-warning">
+                                      <a href="#">
+                                        <i class="icon-cogs"></i> Sever is overloaded
+                                        <small class="pull-right">3 minutes ago</small>
+                                      </a>
+                                    </li>
+                                    <li class="nav-notification-body">
+                                      <a href="#">
+                                        <i class="icon-briefcase"></i> Backup is completed
+                                        <small class="pull-right">6 minutes ago</small>
+                                      </a>
+                                    </li>
+                                    <!-- END NOTIFICATION ITEMS -->
+                                    <!-- BEGIN DROPDOWN FOOTER -->
+                                    <li class="nav-notifications-footer">
+                                      <a tabindex="-1" href="#">View all messages
+                                      </a>
+                                    </li>
+                                    <!-- END DROPDOWN FOOTER -->
+                                  </ul>
+                                  <!-- END DROPDOWN MENU -->
+                                </li>
+                                <!-- END DROPDOWN NOTIFICATIONS -->
+
+                                <!-- BEGIN DROPDOWN TASKS -->
+                                <li class="dropdown nav-tasks">
+                                  <!-- BEGIN DROPDOWN TOGGLE -->
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="badge">13</span>
+                                    <i class="icon-tasks"></i>
+                                  </a>
+                                  <!-- END DROPDOWN TOGGLE -->
+                                  <!-- BEGIN DROPDOWN MENU -->
+                                  <ul class="dropdown-menu">
+                                    <!-- BEGIN DROPDOWN HEADER -->
+                                    <li class="nav-taks-header">
+                                      <a tabindex="-1" href="#">You have <strong>13</strong> tasks in progress</a>
+                                    </li>
+                                    <!-- END DROPDOWN HEADER -->
+                                    <!-- BEGIN DROPDOWN ITEMS -->
+                                    <li>
+                                      <a>
+                                        <strong>Prepare Report</strong><span class="pull-right">30%</span>
+                                        <div class="progress progress-danger active">
+                                          <div class="bar" style="width: 30%;"></div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <strong>Make new update</strong><span class="pull-right">40%</span>
+                                        <div class="progress progress-info active">
+                                          <div class="bar" style="width: 40%;"></div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <strong>Fix critical bugs</strong><span class="pull-right">80%</span>
+                                        <div class="progress progress-striped active">
+                                          <div class="bar" style="width: 80%;"></div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <strong>Complete project</strong><span class="pull-right">5%</span>
+                                        <div class="progress progress-success active">
+                                          <div class="bar" style="width: 5%;"></div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <strong>Others</strong><span class="pull-right">15%</span>
+                                        <div class="progress progress-warning active">
+                                          <div class="bar" style="width: 15%;"></div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <!-- END DROPDOWN ITEMS -->
+                                    <!-- BEGIN DROPDOWN FOOTER -->
+                                    <li class="nav-taks-footer">
+                                      <a tabindex="-1" href="#">View all tasks
+                                      </a>
+                                    </li>
+                                    <!-- END DROPDOWN FOOTER -->
+                                  </ul>
+                                  <!-- END DROPDOWN MENU -->
+                                </li>
+                                <!-- END DROPDOWN TASKS -->
+
+                                <!-- BEGIN DROPDOWN MESSAGES -->
+                                <li class="dropdown nav-messages">
+                                  <!-- BEGIN DROPDOWN TOGGLE -->
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="badge">8</span>
+                                    <i class="icon-envelope"></i>
+                                  </a>
+                                  <!-- END DROPDOWN TOGGLE -->
+                                  <!-- BEGIN DROPDOWN MENU -->
+                                  <ul class="dropdown-menu">
+                                    <!-- BEGIN DROPDOWN HEADER -->
+                                    <li class="nav-messages-header">
+                                      <a tabindex="-1" href="#">You have <strong>8</strong> new messages</a>
+                                    </li>
+                                    <!-- END DROPDOWN HEADER -->
+                                    <!-- BEGIN DROPDOWN ITEMS -->
+                                    <li class="nav-message-body">
+                                      <a>
+                                        <img src="../../assets/img/people-face/user1_55.jpg" alt="User">
+                                        <div>
+                                          <small class="pull-right">Just Now</small>
+                                          <strong>Yadra Abels</strong>
+                                        </div>
+                                        <div>
+                                          Lorem ipsum dolor sit amet, consectetur...
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li class="nav-message-body">
+                                      <a>
+                                        <img src="../../assets/img/people-face/user2_55.jpg" alt="User">
+                                        <div>
+                                          <small class="pull-right">Just Now</small>
+                                          <strong>Cesar Mendoza</strong>
+                                        </div>
+                                        <div>
+                                          Lorem ipsum dolor sit amet, consectetur...
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li class="nav-message-body">
+                                      <a>
+                                        <img src="../../assets/img/people-face/user3_55.jpg" alt="User">
+                                        <div>
+                                          <small class="pull-right">Just Now</small>
+                                          <strong>John Doe</strong>
+                                        </div>
+                                        <div>
+                                          Lorem ipsum dolor sit amet, consectetur...
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li class="nav-message-body">
+                                      <a>
+                                        <img src="../../assets/img/people-face/user4_55.jpg" alt="User">
+                                        <div>
+                                          <small class="pull-right">Just Now</small>
+                                          <strong>Tobei Tsumura</strong>
+                                        </div>
+                                        <div>
+                                          Lorem ipsum dolor sit amet, consectetur...
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <!-- END DROPDOWN ITEMS -->
+                                    <!-- BEGIN DROPDOWN FOOTER -->
+                                    <li class="nav-messages-footer">
+                                      <a tabindex="-1" href="../pages/chat-inbox.html">View all messages
+                                      </a>
+                                    </li>
+                                    <!-- END DROPDOWN FOOTER -->
+                                  </ul>
+                                  <!-- END DROPDOWN MENU -->
+                                </li>
+                                <!-- END DROPDOWN MESSAGES -->
+
+                                <li class="divider-vertical"></li>
+                                <!-- BEGIN EXTRA DROPDOWN -->
+                                <li class="dropdown">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></a>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="../pages/basic-user-profile.html"><i class="icon-user"></i> My Profile</a></li>
+                                    <li><a href="#"><i class="icon-cogs"></i> Settings</a></li>
+                                    <li><a href="../login.html"><i class="icon-off"></i> Log Out</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../pages/faq.html"><i class="icon-info-sign"></i> Help</a></li>
+                                  </ul>
+                                </li>
+                                <!-- END EXTRA DROPDOWN -->
+                              </ul>
+                              <!-- END NAVBAR INDICATORS -->
+                              <!-- BEGIN PANEL TEMPLATE SETTINGS TRIGGER -->
+                              <ul class="nav pull-right hidden-phone">
+                                <!-- BEGIN DEMO SETTINGS -->
+                                <li id="demo-setting" class="dropdown">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="icon-cog"></i>
+                                  </a>
+                                  <ul class="dropdown-menu settings">
+                                    <li class="header">Sidebar</li>
+                                    <li>
+                                     <a href="#autohide">
+                                      <label class="checkbox">
+                                        <input type="checkbox" id="sidebar-autohide" value="option1">
+                                        Auto Hide
+                                      </label>
+                                     </a>
+                                    </li>
+                                    <li>
+                                     <a href="#dividers">
+                                      <label class="checkbox">
+                                        <input type="checkbox" id="sidebar-dividers" value="option2">
+                                        Dividers
+                                      </label>
+                                     </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="header">Themes</li>
+                                    <li id="colorpickers">
+                                      <select name="colorpicker">
+                                        <option value="#f2f2f2">Light</option>
+                                        <option value="#3b5998" data-class="blue">Blue</option>
+                                        <option value="#51a351" data-class="green">Green</option>
+                                        <option value="#f89406" data-class="orange">Orange</option>
+                                      </select>
+                                    </li>
+
+                                  </ul>
+                                </li>
+                                <!-- END DEMO SETTINGS -->
+
+                              </ul>
+                              <!-- END PANEL TEMPLATE SETTINGS TRIGGER -->
+                            </div>
+                          </div>
+                        </nav>
+                        <!-- END NAVBAR -->
+                      </header>
+                      <!-- BEGIN MAIN CONTAINER -->
+                      <div id="main">
+                        <!-- BEGIN CONTENT CONTANER -->
+                        <div class="container-fluid">
+                          <div class="row-fluid">
+                            <div class="span12">
+                              <h3 class="page-title">
+                                Form Wizards
+                              </h3>
+                              <!-- BEGIN BREADCRUMBS -->
+                              <ul class="breadcrumb">
+                                <li>
+                                  <i class="icon-home"></i>
+                                  <a href="../dashboard.html">Dashboard</a>
+                                  <span class="icon-angle-right"></span>
+                                </li>
+                                <li><a href="#">Form Stuff</a>
+                                  <span class="icon-angle-right"></span>
+                                </li>
+                                <li><a href="wizards.html">Wizards</a>
+                                </li>
+
+                              </ul>
+                              <!-- END BREADCRUMBS -->
+                            </div>
+                          </div>
+                          <!-- BEGIN MODAL WIZARD EXAMPLE -->
+                          <div class="row-fluid">
+                            <div class="span12">
+                              <div class="social-box">
+                                <div class="header">
+                                  <h4>Basic Wizard</h4>
+                                </div>
+                                <!-- BEGIN BASIC WIZARD EXAMPLE -->
+                                <div class="body fuelux">
+                                  <div id="MyWizard" class="wizard ">
+                                    <ul class="steps">
+                                      <li data-target="#step1" class="active"><span class="badge badge-info">1</span>Step 1<span class="chevron"></span></li>
+                                      <li data-target="#step2"><span class="badge">2</span>Step 2<span class="chevron"></span></li>
+                                      <li data-target="#step3"><span class="badge">3</span>Step 3<span class="chevron"></span></li>
+                                    </ul>
+                                    <div class="actions">
+                                      <button class="btn btn-mini btn-prev"> <i class="icon-arrow-left"></i>Prev</button>
+                                      <button class="btn btn-mini btn-next" data-last="Finish">Next<i class="icon-arrow-right"></i></button>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="step-content">
+                                    <div class="step-pane active" id="step1">
+                                      <form action="#" class="form-horizontal">
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">Username</label>
+                                          <div class="controls">
+                                            <input id="username" name="username" type="text" placeholder="Your User Name" class="input-xlarge">
+                                          </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">Password</label>
+                                          <div class="controls">
+                                            <input id="password1" name="password1" type="password" placeholder="Enter a strong password" class="input-xlarge">
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="step-pane" id="step2">
+                                      <form action="#" class="form-horizontal">
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">Email</label>
+                                          <div class="controls">
+                                            <input id="email2" name="email2" type="text" placeholder="Enter a valid Email" class="input-xlarge">
+                                          </div>
+                                        </div>
+
+                                        <div class="control-group">
+                                          <label class="control-label">Your Birthdate</label>
+                                          <div class="controls">
+                                            <input id="date" name="date" type="text" placeholder="Enter a valid Date" class="input-xlarge">
+                                          </div>
+                                        </div>
+
+                                      </form>
+                                    </div>
+                                    <div class="step-pane" id="step3">
+                                      <form action="#" class="form-horizontal">
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">Your website</label>
+                                          <div class="controls">
+                                            <input id="url" name="url" type="text" placeholder="Enter a valid URL" class="input-xlarge">
+                                          </div>
+                                        </div>
+
+                                        <!-- Multiple Radios -->
+                                        <div class="control-group">
+                                          <label class="control-label">Gender</label>
+                                          <div class="controls">
+                                            <label class="radio">
+                                              <input type="radio" name="gender" value="1">
+                                              Male
+                                            </label>
+                                            <label class="radio">
+                                              <input type="radio" name="gender" value="2">
+                                              Female
+                                            </label>
+                                            <label class="radio">
+                                              <input type="radio" name="gender" value="3">
+                                              Other
+                                            </label>
+                                          </div>
+                                        </div>
+                                        <!-- Multiple Checkboxes (inline) -->
+                                        <div class="control-group">
+                                          <label class="control-label"></label>
+                                          <div class="controls">
+                                            <label class="checkbox">
+                                              <input type="checkbox" name="agree" value="1">
+                                              I agree
+                                            </label>
+                                          </div>
+                                        </div>
+
+                                      </form>
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <!-- END BASIC WIZARD EXAMPLE -->
+                              </div>
+                            </div>
+                          </div>
+                          <!-- END MODAL WIZARD EXAMPLE -->
+                          <!-- BEGIN BASIC WIZARD EXAMPLE -->
+                          <div class="row-fluid">
+                            <div class="span12">
+                              <div class="social-box">
+                                <div class="header">
+                                  <h4>Basic Wizard</h4>
+                                </div>
+                                <!-- BEGIN BASIC WIZARD EXAMPLE -->
+                                <div id="basicwizard" class="body">
+                                  <!-- BEGIN TABS CONTROLS WIZARD -->
+                                  <div class="navbar navbar-blue form-wizard">
+                                    <div class="navbar-inner">
+                                      <div class="container-fluid">
+                                        <a class="brand" href="#">Registration</a>
+                                        <ul>
+                                          <li><a href="#tab1" data-toggle="tab">First</a></li>
+                                          <li><a href="#tab2" data-toggle="tab">Second</a></li>
+                                          <li><a href="#tab3" data-toggle="tab">Third</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- END TABS CONTROLS WIZARD -->
+                                  <!-- BEGIN PROGRESS BAR WIZARD -->
+                                  <div id="bar" class="progress active">
+                                    <div class="bar bar-success"></div>
+                                  </div>
+                                  <!-- END PROGRESS BAR WIZARD -->
+                                  <!-- BEGIN FORM WIZARD -->
+                                  <form action="#" class="form-horizontal">
+                                    <!-- BEGIN TABS CONTAINER WIZARD -->
+                                    <div class="tab-content">
+                                      <!-- BEGIN TAB1 CONTAINER -->
+                                      <div class="tab-pane" id="tab1">
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">Username</label>
+                                          <div class="controls">
+                                            <input id="username" name="username" type="text" placeholder="Your User Name" class="input-xlarge">
+                                          </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">Password</label>
+                                          <div class="controls">
+                                            <input id="password1" name="password1" type="password" placeholder="Enter a strong password" class="input-xlarge">
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- END TAB1 CONTAINER -->
+                                      <!-- BEGIN TAB2 CONTAINER -->
+                                      <div class="tab-pane" id="tab2">
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">Email</label>
+                                          <div class="controls">
+                                            <input id="email2" name="email2" type="text" placeholder="Enter a valid Email" class="input-xlarge">
+                                          </div>
+                                        </div>
+
+                                        <div class="control-group">
+                                          <label class="control-label">Your Birthdate</label>
+                                          <div class="controls">
+                                            <input id="date" name="date" type="text" placeholder="Enter a valid Date" class="input-xlarge">
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- END TAB2 CONTAINER -->
+                                      <!-- BEGIN TAB3 CONTAINER -->
+                                      <div class="tab-pane" id="tab3">
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">Your website</label>
+                                          <div class="controls">
+                                            <input id="url" name="url" type="text" placeholder="Enter a valid URL" class="input-xlarge">
+                                          </div>
+                                        </div>
+
+                                        <!-- Multiple Radios -->
+                                        <div class="control-group">
+                                          <label class="control-label">Gender</label>
+                                          <div class="controls">
+                                            <label class="radio">
+                                              <input type="radio" name="gender" value="1">
+                                              Male
+                                            </label>
+                                            <label class="radio">
+                                              <input type="radio" name="gender" value="2">
+                                              Female
+                                            </label>
+                                            <label class="radio">
+                                              <input type="radio" name="gender" value="3">
+                                              Other
+                                            </label>
+                                          </div>
+                                        </div>
+                                        <!-- Multiple Checkboxes (inline) -->
+                                        <div class="control-group">
+                                          <label class="control-label"></label>
+                                          <div class="controls">
+                                            <label class="checkbox">
+                                              <input type="checkbox" name="agree" value="1">
+                                              I agree
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- END TAB3 CONTAINER -->
+                                    </div>
+                                    <!-- END TABS CONTAINER WIZARD -->
+                                    <!-- BEGIN FORM BUTTONS ACTION CONTROLS -->
+                                    <div id="action-container2" class="form-actions" style="padding-left: 20px;">
+                                      <div style="float:left">
+                                        <button type='button' class='btn button-first' name='first'><i class="icon-double-angle-left"></i> First</button>
+                                        <button type='button' class='btn button-previous' name='previous'><i class="icon-angle-left"></i> Previous</button>
+                                      </div>
+                                      <div style="float:right">
+                                        <button type='button' class='btn button-next' name='next'>Next <i class="icon-angle-right"></i></button>
+                                        <button type='button' class='btn button-last' name='last'>Last <i class="icon-double-angle-right"></i></button>
+                                        <button type='button' class='btn button-finish' name='finish'>Finish <i class="icon-ok"></i></button>
+                                      </div>
+                                    </div>
+                                    <!-- END FORM BUTTONS ACTION CONTROLS -->
+                                  </form>
+                                  <!-- END FORM WIZARD -->
+                                </div>
+                                <!-- END BASIC WIZARD EXAMPLE -->
+                              </div>
+                            </div>
+                          </div>
+                          <!-- END BASIC WIZARD EXAMPLE -->
+                          <!-- BEGIN ADVANCED VALIDATION WIZARD EXAMPLE -->
+                          <div class="row-fluid">
+                            <div class="span12">
+                              <div class="social-box">
+                                <div class="header">
+                                  <h4>Wizard with validation</h4>
+                                </div>
+                                <div id="validationwizard" class="body">
+                                  <!-- BEGIN TABS CONTROLS WIZARD -->
+                                  <div class="navbar navbar-blue form-wizard">
+                                    <div class="navbar-inner">
+                                      <div class="container-fluid">
+                                        <ul>
+                                          <li><a href="#tab-validation1" data-toggle="tab"><i class="icon-user"></i> First</a></li>
+                                          <li><a href="#tab-validation2" data-toggle="tab"><i class="icon-envelope"></i> Second</a></li>
+                                          <li><a href="#tab-validation3" data-toggle="tab"><i class="icon-credit-card"></i> Third</a></li>
+                                          <li><a href="#tab-validation4" data-toggle="tab"><i class="icon-check"></i> Forth</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- END TABS CONTROLS WIZARD -->
+                                  <!-- BEGIN PROGRESS BAR -->
+                                  <div id="bar2" class="progress active">
+                                    <div class="bar bar-success"></div>
+                                  </div>
+                                  <!-- END PROGRESS BAR -->
+                                  <!-- BEGIN FORM WIZARD  -->
+                                  <form action="#" id="form-validation" class="form-horizontal">
+                                    <div class="tab-content offset2">
+                                      <!-- BEGIN TAB1 CONTAINER -->
+                                      <div class="tab-pane" id="tab-validation1">
+                                        <h3>Provide your personal details</h3>
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">Full name</label>
+                                          <div class="controls">
+                                            <input id="fullname" name="fullname" placeholder="Enter your name &amp; lastname" class="input-xlarge" type="text">
+                                            <p class="help-block"></p>
+                                          </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">Email</label>
+                                          <div class="controls">
+                                            <input id="email" name="email" placeholder="Enter a valid email" class="input-xlarge" type="text">
+                                            <p class="help-block"></p>
+                                          </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">Phone Number</label>
+                                          <div class="controls">
+                                            <input id="phonenumber" name="phonenumber" placeholder="Enter your phone number" class="input-xlarge" type="text">
+                                            <p class="help-block"></p>
+                                          </div>
+                                        </div>
+
+                                        <!-- Multiple Checkboxes -->
+                                        <div class="control-group">
+                                          <label class="control-label">Gender</label>
+                                          <div class="controls">
+                                            <label class="radio">
+                                              <input name="gender" value="Male" type="radio">
+                                              Male
+                                            </label>
+                                            <label class="radio">
+                                              <input name="gender" value="Female" type="radio">
+                                              Female
+                                            </label>
+                                            <label class="radio">
+                                              <input name="gender" value="Other" type="radio">
+                                              Other
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- END TAB1 CONTAINER -->
+                                      <!-- BEGIN TAB2 CONTAINER -->
+                                      <div class="tab-pane" id="tab-validation2">
+                                        <h3>Provide your shipping address</h3>
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">Address</label>
+                                          <div class="controls">
+                                            <input id="address" name="address" placeholder="Enter your address" class="input-xlarge" type="text">
+                                            <p class="help-block"></p>
+                                          </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">City/Town</label>
+                                          <div class="controls">
+                                            <input id="citytown" name="citytown" placeholder="The City/Town where you live" class="input-xlarge" type="text">
+                                            <p class="help-block"></p>
+                                          </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">Postal Code</label>
+                                          <div class="controls">
+                                            <input id="postalcode" name="postalcode" placeholder="" class="input-xlarge" type="text">
+                                            <p class="help-block"></p>
+                                          </div>
+                                        </div>
+
+                                        <!-- Select Basic -->
+                                        <div class="control-group">
+                                          <label class="control-label">Your Country</label>
+                                          <div class="controls">
+                                            <select id="country" name="country" class="input-xlarge">
+                                             <option value="">Select a country</option>
+                                             <option value="AF">Afghanistan</option>
+                                             <option value="AX">Åland Islands</option>
+                                             <option value="AL">Albania</option>
+                                             <option value="DZ">Algeria</option>
+                                             <option value="AS">American Samoa</option>
+                                             <option value="AD">Andorra</option>
+                                             <option value="AO">Angola</option>
+                                             <option value="AI">Anguilla</option>
+                                             <option value="AQ">Antarctica</option>
+                                             <option value="AG">Antigua and Barbuda</option>
+                                             <option value="AR">Argentina</option>
+                                             <option value="AM">Armenia</option>
+                                             <option value="AW">Aruba</option>
+                                             <option value="AC">Ascension Island</option>
+                                             <option value="AU">Australia</option>
+                                             <option value="AT">Austria</option>
+                                             <option value="AZ">Azerbaijan</option>
+                                             <option value="BS">Bahamas</option>
+                                             <option value="BH">Bahrain</option>
+                                             <option value="BD">Bangladesh</option>
+                                             <option value="BB">Barbados</option>
+                                             <option value="BY">Belarus</option>
+                                             <option value="BE">Belgium</option>
+                                             <option value="BZ">Belize</option>
+                                             <option value="BJ">Benin</option>
+                                             <option value="BM">Bermuda</option>
+                                             <option value="BT">Bhutan</option>
+                                             <option value="BO">Bolivia</option>
+                                             <option value="BQ">Bonaire, Sint Eustatius, and Saba</option>
+                                             <option value="BA">Bosnia and Herzegovina</option>
+                                             <option value="BW">Botswana</option>
+                                             <option value="BV">Bouvet Island</option>
+                                             <option value="BR">Brazil</option>
+                                             <option value="IO">British Indian Ocean Territory</option>
+                                             <option value="VG">British Virgin Islands</option>
+                                             <option value="BN">Brunei</option>
+                                             <option value="BG">Bulgaria</option>
+                                             <option value="BF">Burkina Faso</option>
+                                             <option value="BI">Burundi</option>
+                                             <option value="KH">Cambodia</option>
+                                             <option value="CM">Cameroon</option>
+                                             <option value="CA">Canada</option>
+                                             <option value="IC">Canary Islands</option>
+                                             <option value="CV">Cape Verde</option>
+                                             <option value="KY">Cayman Islands</option>
+                                             <option value="CF">Central African Republic</option>
+                                             <option value="EA">Ceuta and Melilla</option>
+                                             <option value="TD">Chad</option>
+                                             <option value="CL">Chile</option>
+                                             <option value="CN">China</option>
+                                             <option value="CX">Christmas Island</option>
+                                             <option value="CP">Clipperton Island</option>
+                                             <option value="CC">Cocos [Keeling] Islands</option>
+                                             <option value="CO">Colombia</option>
+                                             <option value="KM">Comoros</option>
+                                             <option value="CG">Congo - Brazzaville</option>
+                                             <option value="CD">Congo - Kinshasa</option>
+                                             <option value="CK">Cook Islands</option>
+                                             <option value="CR">Costa Rica</option>
+                                             <option value="CI">Côte d’Ivoire</option>
+                                             <option value="HR">Croatia</option>
+                                             <option value="CU">Cuba</option>
+                                             <option value="CW">Curaçao</option>
+                                             <option value="CY">Cyprus</option>
+                                             <option value="CZ">Czech Republic</option>
+                                             <option value="DK">Denmark</option>
+                                             <option value="DG">Diego Garcia</option>
+                                             <option value="DJ">Djibouti</option>
+                                             <option value="DM">Dominica</option>
+                                             <option value="DO">Dominican Republic</option>
+                                             <option value="EC">Ecuador</option>
+                                             <option value="EG">Egypt</option>
+                                             <option value="SV">El Salvador</option>
+                                             <option value="GQ">Equatorial Guinea</option>
+                                             <option value="ER">Eritrea</option>
+                                             <option value="EE">Estonia</option>
+                                             <option value="ET">Ethiopia</option>
+                                             <option value="EU">European Union</option>
+                                             <option value="FK">Falkland Islands</option>
+                                             <option value="FO">Faroe Islands</option>
+                                             <option value="FJ">Fiji</option>
+                                             <option value="FI">Finland</option>
+                                             <option value="FR">France</option>
+                                             <option value="GF">French Guiana</option>
+                                             <option value="PF">French Polynesia</option>
+                                             <option value="TF">French Southern Territories</option>
+                                             <option value="GA">Gabon</option>
+                                             <option value="GM">Gambia</option>
+                                             <option value="GE">Georgia</option>
+                                             <option value="DE">Germany</option>
+                                             <option value="GH">Ghana</option>
+                                             <option value="GI">Gibraltar</option>
+                                             <option value="GR">Greece</option>
+                                             <option value="GL">Greenland</option>
+                                             <option value="GD">Grenada</option>
+                                             <option value="GP">Guadeloupe</option>
+                                             <option value="GU">Guam</option>
+                                             <option value="GT">Guatemala</option>
+                                             <option value="GG">Guernsey</option>
+                                             <option value="GN">Guinea</option>
+                                             <option value="GW">Guinea-Bissau</option>
+                                             <option value="GY">Guyana</option>
+                                             <option value="HT">Haiti</option>
+                                             <option value="HM">Heard Island and McDonald Islands</option>
+                                             <option value="HN">Honduras</option>
+                                             <option value="HK">Hong Kong SAR China</option>
+                                             <option value="HU">Hungary</option>
+                                             <option value="IS">Iceland</option>
+                                             <option value="IN">India</option>
+                                             <option value="ID">Indonesia</option>
+                                             <option value="IR">Iran</option>
+                                             <option value="IQ">Iraq</option>
+                                             <option value="IE">Ireland</option>
+                                             <option value="IM">Isle of Man</option>
+                                             <option value="IL">Israel</option>
+                                             <option value="IT">Italy</option>
+                                             <option value="JM">Jamaica</option>
+                                             <option value="JP">Japan</option>
+                                             <option value="JE">Jersey</option>
+                                             <option value="JO">Jordan</option>
+                                             <option value="KZ">Kazakhstan</option>
+                                             <option value="KE">Kenya</option>
+                                             <option value="KI">Kiribati</option>
+                                             <option value="KW">Kuwait</option>
+                                             <option value="KG">Kyrgyzstan</option>
+                                             <option value="LA">Laos</option>
+                                             <option value="LV">Latvia</option>
+                                             <option value="LB">Lebanon</option>
+                                             <option value="LS">Lesotho</option>
+                                             <option value="LR">Liberia</option>
+                                             <option value="LY">Libya</option>
+                                             <option value="LI">Liechtenstein</option>
+                                             <option value="LT">Lithuania</option>
+                                             <option value="LU">Luxembourg</option>
+                                             <option value="MO">Macau SAR China</option>
+                                             <option value="MK">Macedonia</option>
+                                             <option value="MG">Madagascar</option>
+                                             <option value="MW">Malawi</option>
+                                             <option value="MY">Malaysia</option>
+                                             <option value="MV">Maldives</option>
+                                             <option value="ML">Mali</option>
+                                             <option value="MT">Malta</option>
+                                             <option value="MH">Marshall Islands</option>
+                                             <option value="MQ">Martinique</option>
+                                             <option value="MR">Mauritania</option>
+                                             <option value="MU">Mauritius</option>
+                                             <option value="YT">Mayotte</option>
+                                             <option value="MX">Mexico</option>
+                                             <option value="FM">Micronesia</option>
+                                             <option value="MD">Moldova</option>
+                                             <option value="MC">Monaco</option>
+                                             <option value="MN">Mongolia</option>
+                                             <option value="ME">Montenegro</option>
+                                             <option value="MS">Montserrat</option>
+                                             <option value="MA">Morocco</option>
+                                             <option value="MZ">Mozambique</option>
+                                             <option value="MM">Myanmar [Burma]</option>
+                                             <option value="NA">Namibia</option>
+                                             <option value="NR">Nauru</option>
+                                             <option value="NP">Nepal</option>
+                                             <option value="NL">Netherlands</option>
+                                             <option value="AN">Netherlands Antilles</option>
+                                             <option value="NC">New Caledonia</option>
+                                             <option value="NZ">New Zealand</option>
+                                             <option value="NI">Nicaragua</option>
+                                             <option value="NE">Niger</option>
+                                             <option value="NG">Nigeria</option>
+                                             <option value="NU">Niue</option>
+                                             <option value="NF">Norfolk Island</option>
+                                             <option value="KP">North Korea</option>
+                                             <option value="MP">Northern Mariana Islands</option>
+                                             <option value="NO">Norway</option>
+                                             <option value="OM">Oman</option>
+                                             <option value="QO">Outlying Oceania</option>
+                                             <option value="PK">Pakistan</option>
+                                             <option value="PW">Palau</option>
+                                             <option value="PS">Palestinian Territories</option>
+                                             <option value="PA">Panama</option>
+                                             <option value="PG">Papua New Guinea</option>
+                                             <option value="PY">Paraguay</option>
+                                             <option value="PE">Peru</option>
+                                             <option value="PH">Philippines</option>
+                                             <option value="PN">Pitcairn Islands</option>
+                                             <option value="PL">Poland</option>
+                                             <option value="PT">Portugal</option>
+                                             <option value="PR">Puerto Rico</option>
+                                             <option value="QA">Qatar</option>
+                                             <option value="RE">Réunion</option>
+                                             <option value="RO">Romania</option>
+                                             <option value="RU">Russia</option>
+                                             <option value="RW">Rwanda</option>
+                                             <option value="BL">Saint Barthélemy</option>
+                                             <option value="SH">Saint Helena</option>
+                                             <option value="KN">Saint Kitts and Nevis</option>
+                                             <option value="LC">Saint Lucia</option>
+                                             <option value="MF">Saint Martin</option>
+                                             <option value="PM">Saint Pierre and Miquelon</option>
+                                             <option value="VC">Saint Vincent and the Grenadines</option>
+                                             <option value="WS">Samoa</option>
+                                             <option value="SM">San Marino</option>
+                                             <option value="ST">São Tomé and Príncipe</option>
+                                             <option value="SA">Saudi Arabia</option>
+                                             <option value="SN">Senegal</option>
+                                             <option value="RS">Serbia</option>
+                                             <option value="CS">Serbia and Montenegro</option>
+                                             <option value="SC">Seychelles</option>
+                                             <option value="SL">Sierra Leone</option>
+                                             <option value="SG">Singapore</option>
+                                             <option value="SX">Sint Maarten</option>
+                                             <option value="SK">Slovakia</option>
+                                             <option value="SI">Slovenia</option>
+                                             <option value="SB">Solomon Islands</option>
+                                             <option value="SO">Somalia</option>
+                                             <option value="ZA">South Africa</option>
+                                             <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                             <option value="KR">South Korea</option>
+                                             <option value="SS">South Sudan</option>
+                                             <option value="ES">Spain</option>
+                                             <option value="LK">Sri Lanka</option>
+                                             <option value="SD">Sudan</option>
+                                             <option value="SR">Suriname</option>
+                                             <option value="SJ">Svalbard and Jan Mayen</option>
+                                             <option value="SZ">Swaziland</option>
+                                             <option value="SE">Sweden</option>
+                                             <option value="CH">Switzerland</option>
+                                             <option value="SY">Syria</option>
+                                             <option value="TW">Taiwan</option>
+                                             <option value="TJ">Tajikistan</option>
+                                             <option value="TZ">Tanzania</option>
+                                             <option value="TH">Thailand</option>
+                                             <option value="TL">Timor-Leste</option>
+                                             <option value="TG">Togo</option>
+                                             <option value="TK">Tokelau</option>
+                                             <option value="TO">Tonga</option>
+                                             <option value="TT">Trinidad and Tobago</option>
+                                             <option value="TA">Tristan da Cunha</option>
+                                             <option value="TN">Tunisia</option>
+                                             <option value="TR">Turkey</option>
+                                             <option value="TM">Turkmenistan</option>
+                                             <option value="TC">Turks and Caicos Islands</option>
+                                             <option value="TV">Tuvalu</option>
+                                             <option value="UM">U.S. Minor Outlying Islands</option>
+                                             <option value="VI">U.S. Virgin Islands</option>
+                                             <option value="UG">Uganda</option>
+                                             <option value="UA">Ukraine</option>
+                                             <option value="AE">United Arab Emirates</option>
+                                             <option value="GB">United Kingdom</option>
+                                             <option value="US">United States</option>
+                                             <option value="UY">Uruguay</option>
+                                             <option value="UZ">Uzbekistan</option>
+                                             <option value="VU">Vanuatu</option>
+                                             <option value="VA">Vatican City</option>
+                                             <option value="VE">Venezuela</option>
+                                             <option value="VN">Vietnam</option>
+                                             <option value="WF">Wallis and Futuna</option>
+                                             <option value="EH">Western Sahara</option>
+                                             <option value="YE">Yemen</option>
+                                             <option value="ZM">Zambia</option>
+                                             <option value="ZW">Zimbabwe</option>
+                                           </select>                      </div>
+                                         </div>
+                                       </div>
+                                       <!-- END TAB2 CONTAINER -->
+                                       <!-- BEGIN TAB3 CONTAINER -->
+                                       <div class="tab-pane" id="tab-validation3">
+
+                                        <h3>Provide your credit card details</h3>
+
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">Card Holder Name</label>
+                                          <div class="controls">
+                                            <input id="cardholdername" name="cardholdername" placeholder="" class="input-xlarge" type="text">
+                                            <p class="help-block"></p>
+                                          </div>
+                                        </div>
+
+                                        <!-- Button Drop Down -->
+                                        <div class="control-group">
+                                          <label class="control-label">Credit card</label>
+                                          <div class="controls">
+                                            <div class="input-prepend">
+                                              <div class="btn-group">
+                                                <button class="btn dropdown-toggle" data-toggle="dropdown">Visa <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                  <li><a href="#">Mastercard</a></li>
+                                                  <li><a href="#">American Express</a></li>
+                                                </ul>
+                                              </div><!-- /btn-group -->
+                                              <input id="creditcardnumber" name="creditcardnumber" placeholder="Credit Card Number" class="span10" type="text">
+                                            </div>
+                                          </div>
+
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">CVC</label>
+                                          <div class="controls">
+                                            <input id="cvc" name="cvc" placeholder="" class="input-xlarge" type="text">
+                                            <p class="help-block"></p>
+                                          </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="control-group">
+                                          <label class="control-label">Expiration Date</label>
+                                          <div class="controls">
+                                            <input id="expmonth" name="expmonth" placeholder="MM" class="span2" type="text">
+                                            <input id="expyear" name="expyear" placeholder="YYYY" class="span2" type="text">
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- END TAB3 CONTAINER -->
+                                      <!-- BEGIN TAB4 CONTAINER -->
+                                      <div class="tab-pane" id="tab-validation4">
+                                        <h3>Confirm your account</h3>
+                                        <dl class="dl-horizontal">
+                                          <dt>Fullname:</dt>
+                                          <dd>John Doe</dd>
+                                          <dt>Email:</dt>
+                                          <dd>johdoe@example.com</dd>
+                                          <dt>Phone:</dt>
+                                          <dd>+58 212-123-4567</dd>
+                                          <dt>Credit Card Number:</dt>
+                                          <dd>*************1234</dd>
+                                          <dt>Address</dt>
+                                          <dd>
+                                            <address>
+                                              <strong>Twitter, Inc.</strong><br>
+                                              795 Folsom Ave, Suite 600<br>
+                                              San Francisco, CA 94107<br>
+                                              <abbr title="Phone">P:</abbr> (123) 456-7890
+                                            </address>
+
+                                          </dd>
+                                        </dl>
+                                        <!-- Multiple Checkboxes (inline) -->
+                                        <div class="control-group">
+                                          <label class="control-label"></label>
+                                          <div class="controls">
+                                            <label class="checkbox">
+                                              <input name="confirm" value="I confirm my info" type="checkbox">
+                                              I confirm my info
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- END TAB4 CONTAINER -->
+                                    </div>
+                                    <!-- BEGIN FORM BUTTONS ACTION CONTROLS -->
+                                    <div id="action-container" class="form-actions">
+                                      <div class="offset2">
+                                        <button type='button' class='btn button-previous' name='previous'><i class="icon-angle-left"></i> Previous</button>
+                                        <button type='button' class='btn button-next' name='next'>Next <i class="icon-angle-right"></i></button>
+                                        <button class='btn button-finish' name='finish'>Finish <i class="icon-ok"></i></button>
+                                      </div>
+                                    </div>
+                                    <!-- END FORM BUTTONS ACTION CONTROLS -->
+                                  </form>
+                                  <!-- END FORM WIZARD  -->
+                                </div>
+                              </div>        </div>
+                            </div>
+                            <!-- BEGIN MODAL MESSAGE SUCCESS -->
+                            <div id="finish-modal" class="modal hide fade">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h3>Registration Form</h3>
+                              </div>
+                              <div class="modal-body">
+                                <p>The information has been sent</p>
+                              </div>
+                              <div class="modal-footer">
+                                <a href="#" class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Acept</a>
+                              </div>
+                            </div>
+                            <!-- END MODAL MESSAGE SUCCESS -->
+                            <!-- END ADVANCED VALIDATION WIZARD EXAMPLE -->
+                          </div>
+                          <!-- END CONTENT CONTAINER -->
+                          <!-- BEGIN PAGE FOOTER -->
+                          <footer id="footer">
+                            <div class="container-fluid">
+                              2013 © <em>Social - Premium Responsive Admin Template</em> by  <a href="http://cesarlab.com/" target="_blank">cesarlab.com</a>.
+                            </div>
+                          </footer>
+                          <!-- END PAGE FOOTER -->
+                        </div>
+                        <!-- END MAIN CONTAINER -->
+                      </div>
+                      <!-- END WRAPER -->
+
+                      <!-- BEGIN SIDEBAR PANEL -->
+                      <div style="display: none;">
+                        <ul class="rightPanel">
+                          <li><a href="../pages/basic-user-profile.html"><i class="icon-user"></i><span>My Profile</span></a></li>
+                          <li><a href="../pages/chat-inbox.html"><i class="icon-envelope"></i><span>Messages</span></a></li>
+                          <li><a href="#"><i class="icon-tasks"></i><span>Taks</span></a></li>
+                        </ul>
+                      </div>
+                      <!-- END SIDEBAR PANEL -->
+
+                      <!-- BEGIN JAVASCRIPT CODES -->
+                      <!-- BEGIN GENERAL JAVASCRIPT CODE -->
+                      <script src="../../assets/plugins/jquery/jquery-1.9.1.min.js?v1.3.1"></script>
+                      <script src="../../assets/plugins/jquery.ui/jquery-ui-1.10.1.custom.min.js?v1.3.1"></script>
+                      <script src="../../assets/plugins/jquery.ui.touch-punch/jquery.ui.touch-punch.js?v1.3.1"></script>
+                      <script src="../../assets/plugins/twitter-bootstrap/bootstrap.js?v1.3.1"></script>
+
+                      <script src="../../assets/plugins/holder/holder.js?v1.3.1"></script>
+                      <script src="../../assets/plugins/jquery.slimscroll/jquery.slimscroll.min.js?v1.3.1"></script>
+                      <script src="../../assets/plugins/jquery.cookie/jquery.cookie.js?v1.3.1"></script>
+                      <script src="../../assets/plugins/jquery.simplecolorpicker/jquery.simplecolorpicker.js?v1.3.1"></script>
+
+                      <script src="../../assets/plugins/jquery.uipro/uipro.min.js?v1.3.1"></script>
+
+                      <script src="../../assets/plugins/jquery.ui.chatbox/jquery.ui.chatbox.js?v1.3.1"></script>
+                      <script src="../../assets/js/chatboxManager.js?v1.3.1"></script>
+                      <script src="../../assets/plugins/jquery.livefilter/jquery.livefilter.js"></script>
+
+                      <script src="../../assets/js/extents.js?v1.3.1"></script>
+                      <script src="../../assets/js/app.js?v1.3.1"></script>
+                      <script src="../../assets/js/demo-settings.js?v1.3.1"></script>
+                      <script src="../../assets/js/sidebar.js?v1.3.1"></script>
+
+                      <script>
+                      /*<![CDATA[*/
+                      $(function() {
+                        App.init();
+                        DemoSettings.init({ urlThemes: '../../assets/css/themes/social.theme-'});
+                        SideBar.init({shortenOnClickOutside: false});
+                        $.uiPro({
+                          rightMenu : '.rightPanel',
+                          threshold : 15
+                        });
+                      });
+                      /*]]>*/
+                      </script>
+                      <!-- END GENERAL JAVASCRIPT CODE -->
+
+                      <!-- BEGIN JAVASCRIPT CODES FOR THE CURRENT PAGE -->
+                      <script src="../../assets/plugins/jquery.validation/jquery.validate.js?v1.3.1"></script>
+                      <script src="../../assets/plugins/jquery.maskedinput/jquery.maskedinput.min.js?v1.3.1"></script>
+                      <script src="../../assets/plugins/bootstrap.wizard/jquery.bootstrap.wizard.min.js?v1.3.1"></script>
+                      <script src="../../assets/js/form-stuff.wizard.js?v1.3.1"></script>
+                      <script src="../../assets/plugins/bootstrap.fuelux/lib/require.js?v1.3.1"></script>
+                      <script src="../../assets/plugins/bootstrap.fuelux/loader.min.js?v1.3.1"></script>
+                      <script src="../../assets/plugins/bootstrap.fuelux/wizard.js?v1.3.1"></script>
+                      <script>
+                      $(function() {
+                        FormWizard.init();
+                      });
+                      </script>
+                      <!-- END JAVASCRIPT CODES FOR THE CURRENT PAGE -->
+                      <!-- END JAVASCRIPT CODES -->
+                    </body>
+
+                    </html>
