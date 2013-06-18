@@ -5,7 +5,7 @@
 
 compound使用express做web端，jugglingdb做orm的adapter，juggling-mysql,juggling-mongodb,juggling-redis做核心处理的数据库端。
 
-#目前前端采用的是backbone+bootstrap+purchase template构成，与后端交互完全使用json传送数据方式，与resthub相比，我们同样希望达到以下目标：
+目前前端采用的是backbone+bootstrap+purchase template构成，与后端交互完全使用json传送数据方式，与resthub相比，我们同样希望达到以下目标：
 
  - restful的api
  - 数据库存储有ormapping，实际上，我们可以同时访问多个数据库实例
