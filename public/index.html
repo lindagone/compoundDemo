@@ -1,95 +1,207 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Welcome to Compound</title>
-    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css">
-    <meta name="viewport" content="width=500, initial-scale=0.5">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script type="text/javascript" src="/javascripts/rails.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="page-header" style="text-align: center;">
-        <h1 style="text-align:left; padding-top: 35px; padding-left: 100px">Welcome to</h1>
-        <img src="/images/compound.png" alt="CompoundJS" />
+<!--
+  Product:        Social - Premium Responsive Admin Template
+  Version:        v1.3.1
+  Copyright:      2013 CesarLab.com
+  License:        http://themeforest.net/licenses
+  Live Preview:   http://go.cesarlab.com/SocialAdminTemplate
+  Purchase:       http://go.cesarlab.com/PurchaseSocial
+-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Auto-hide Sidebar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Le styles -->
+  <link href="css/twitter-bootstrap/bootstrap.css?v1.3.1" rel="stylesheet">
+  <link href="css/social.css?v1.3.1" rel="stylesheet">
+  <link href="css/font-awesome.css?v1.3.1" rel="stylesheet">
+  <link href="css/themes/social.theme-blue.css?v1.3.1" rel="stylesheet">
+  <link href="css/twitter-bootstrap/bootstrap-responsive.css?v1.3.1" rel="stylesheet">
+  <style>
+  .wraper #main{
+    margin-top: 40px;
+  }
+  </style>
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="/templates/socia/templates/social/assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Support for responsive desing in IE8 -->
+  <!--[if lte IE 8]>
+      <script src="/templates/social/assets/plugins/respond/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+    <!-- We add the sidebar-full class to the wrapper
+    This is necessary for padding on left the navbar and
+    the bady content -->
+    <div class="wraper">
+      <!-- /////////////////////////////////////////////////////////////////////// -->
+    <!-- We indicate to the social sidebar that we want to use
+    the full width mode -->
+    <aside class="social-sidebar sidebar-full collapse">
+      <!-- START the use settings section -->
+      <div class="user-settings">
+        <div class="arrow"></div>
+        <!-- User Setting title -->
+        <h3 class="user-settings-title">Settings shortcuts</h3>
+        <!-- User Setting Content -->
+        <div class="user-settings-content">
+          <!-- It's not necessary any extra class to indicate
+          the content of user setting option in the menu -->
+          <a href="#my-profile">
+            <div class="icon">
+              <i class="icon-user"></i>
+            </div>
+            <div class="title">My Profile</div>
+            <div class="content">View your profile</div>
+          </a>
+          <a href="#view-messages">
+            <div class="icon">
+              <i class="icon-envelope-alt"></i>
+            </div>
+            <div class="title">View Messages</div>
+            <div class="content">You have <strong>17</strong> new messages</div>
+          </a>
+          <a href="#view-pending-tasks">
+            <div class="icon">
+              <i class="icon-tasks"></i>
+            </div>
+
+            <div class="title">View Tasks</div>
+            <div class="content">You have <strong>8</strong> pending tasks</div>
+          </a>
+        </div><!-- /User Setting Content -->
+        <!-- User settng Footer -->
+        <div class="user-settings-footer">
+          <a href="#more-settings">See more settings</a>
+        </div>
       </div>
-      <h6 style="text-align: center;">
-        <a href="/compound/environment.json" id="show-env-info-link" data-remote="true" data-jsonp="load">Information about application environment</a>
-      </h6>
-      <div id="env-info"></div>
-      <hr />
-      <div class="row">
-        <div class="span8 offset4">
-          <div class="content">
-            <h6>1. Start with <a href="http://compoundjs.com/docs.html#generators">generators</a></h6>
-            <p> This is the fastest way to create an application:</p>
-            <pre>compound generate crud post title content date:date published:boolean</pre>
-            <h6>2. Then describe a <a href="http://compoundjs.com/docs.html#routing">route</a></h6>
-            <p>in <code>config/routes.js</code> and remove this file (<code>public/index.html</code>)</p>
-            <pre>exports.routes = function (map) {
-    map.get('/', 'posts#index');
-};</pre>
-            <h6>3. Design your <a href="http://compoundjs.com/docs.html#orm">database</a></h6>
-            <p>in <code>db/schema.js</code> and describe models in <code>app/models/*</code></p>
-            <h6>4. Keep your <a href="http://compoundjs.com/docs.html#controllers">controllers</a> thin!</h6>
-            <p>Write tests, and good luck.<br> If you have any questions feel free to ask at <a href="http://groups.google.com/group/compoundjs">CompoundJS Google Group</a> or <a href="irc://irc.freenode.net/compoundjs">#compoundjs on irc.freenode.net</a>.</p>
-            <p>Track CompoundJS project state on our <a href="https://trello.com/board/railwayjs/4f0a0d49128365065e008a1d">Trello board</a>, vote for features, discuss. Help us to get better!</p>
+      <!-- END the use settings section -->
+      <!-- Now we have se social sidebar content -->
+      <!-- We use nanoScroller, then it's necessary the
+      basic markup structure for this plugin
+      http://jamesflorentino.github.io/nanoScrollerJS/ -->
+      <div class="social-sidebar-content nano">
+        <div class="content">
+          <!-- The user name and avatar section -->
+          <div class="user">
+            <img class="avatar" width="25" height="25" src="img/avatar-30.png" alt="Julio Marquez">
+            <span data-toggle="dropdown">User</span>
+            <!-- This is the trigger for the user settings menu -->
+            <i class="icon-user trigger-user-settings"></i>
           </div>
-        </div>
 
-        <div class="span4">
-          <p>
-            <h6>5. Links in sidebar</h6>
-            <ul style="padding-left: 0px;">
-              <li><a href="http://compoundjs.com">CompoundJS project docs</a></li>
-              <li><a href="http://expressjs.com">ExpressJS project homepage</a></li>
-              <li><a href="http://jsdoc.info/1602/jugglingdb">JugglingDB ORM API docs</a></li>
-              <li><a href="http://compoundjs.com/juggling.html">Try JugglingDB in your browser, docs</a></li>
-            </ul>
-          </p>
-        </div>
+          <!-- BEGIN NAVIGATION CONTROLS -->
+          <div class="navigation-sidebar">
+            <i class="switch-sidebar-icon icon-align-justify"></i>
+          </div>
+          <!-- END NAVIGATION CONTROLS -->
 
+          <!-- The search field section -->
+          <div class="search-sidebar">
+            <img src="img/icons/stuttgart-icon-pack/32x32/search.png" alt="Search">
+            <form class="search-sidebar-form">
+              <input type="text" class="search-query input-block-level" placeholder="Search">
+            </form>
+          </div>
+          <div class="clearfix"></div>
+          <!-- START the menu content section -->
+          <section class="menu">
+            <!-- We use accordion for the menu -->
+            <div class="accordion" id="accordion2">
+              <!-- If you want that a top item activated you must add the active
+              class as shown in the next line and add the opened class next to
+              the accordion-toggle class -->
+              <div class="accordion-group active">
+                <div class="accordion-heading">
+                  <!-- ... and opened -->
+                  <a class="accordion-toggle opened" data-toggle="collapse" data-parent="#accordion2" href="#collapse-form-stuff">
+                    <img src="img/icons/stuttgart-icon-pack/32x32/sitemap.png" alt="Form Stuff">
+                    <span>Top Item 3 </span>
+                    <!-- You can add a badge -->
+                    <!-- <span class="badge">3</span> -->
+                    <!-- or an arrow -->
+                    <span class="arrow"></span>
+                  </a>
+                </div>
+                <!-- The top item children -->
+                <ul id="collapse-form-stuff" class="accordion-body collapse nav nav-list collapse in">
+                  <!-- An active child -->
+                  <li class="active"><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- END the menu content section -->
+        </div>
       </div>
-      <footer>
-      </footer>
-      <script>
-        function load(data) {
-          $('#show-env-info-link').hide();
-          if (data.forbidden) {
-            return '';
-          }
-          var html = '<table class="zebra-striped">';
-          html += makeList('Versions', data.versions);
-          html += makeList('Settings', data.settings);
-          html += makeList('Application', data.application);
-          html += makeList('ENV', data.env);
-          html += '</table>';
-
-          $('#env-info').html(html);
-        }
-
-        function makeList(title, obj) {
-          var res = '<tr><td colspan="2"><h6>' + title + '</h6></td></tr>';
-          for (var i in obj) {
-            res += '<tr><td>' + i + '</td><td>' + toS(obj[i]) + '</td></tr>';
-          }
-          return res;
-        }
-
-        function toS(obj) {
-          if (obj instanceof Array) {
-            return obj.join('<br />');
-          } else if (typeof obj === 'object') {
-            var s = [];
-            for (var i in obj) {
-              s.push(i + ': ' + obj[i]);
-            }
-            return s.join(', ');
-          } else {
-            return obj;
-          }
-        }
-      </script>
+    </aside>
+    <!-- /////////////////////////////////////////////////////////////////////// -->
+    <header>
+      <nav class="navbar navbar-blue navbar-fixed-top social-navbar">
+       <div class="navbar-inner">
+         <div class="container-fluid">
+          <!-- This is the button that shows the social sidebar in tablets an phones -->
+          <!-- Responsive navbar -> http://twitter.github.io/bootstrap/components.html#navbar -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".social-sidebar">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </a>
+         <a class="brand" href="#">
+          Title</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <h3 class="page-title">
+            Auto-hide Sidebar
+          </h3>
+          <ul class="breadcrumb">
+            <li>
+              <i class="icon-home"></i>
+              <a href="#">Home</a>
+              <span class="icon-angle-right"></span>
+            </li>
+            <li><a href="#">Element 1</a>
+              <span class="icon-angle-right"></span>
+            </li>
+            <li><a href="newMail">Element 2</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </body>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <!-- Content page here -->
+        <div id="bodyContainer">
+        	
+        	
+        </div>
+      </div>
+    </div>
+
+	<script data-main="js/main" src="js/lib/require.js"></script>
+  </div>
+</div>
+
+
+
+</body>
+
 </html>

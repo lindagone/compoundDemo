@@ -44,12 +44,12 @@ define(['jquery', 'underscore'], function ($, _) {
     var error = console.error;
     
     // console.log = console.debug
-    console.log = function () {
-        log.apply(this, Array.prototype.slice.call(arguments));
-        if(enabledFor('debug')) {
-            sendLogToServer('debug', arguments);
-        }
-    };
+    // console.log = function () {
+        // log.apply(this, Array.prototype.slice.call(arguments));
+        // if(enabledFor('debug')) {
+            // sendLogToServer('debug', arguments);
+        // }
+    // };
     console.debug = function () {
         debug.apply(this, Array.prototype.slice.call(arguments));
         if(enabledFor('debug')) {

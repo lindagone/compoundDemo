@@ -50,6 +50,7 @@ define(['router/app-router', 'jquery','bootstrap','json2','jquery-plugin','const
 	};
 
 	$(document).ready(function() {
+		SideBar.init();
       //$('[data-form=datepicker]').datepicker();
       //$('[data-form=uniform]').uniform()
       $.ajaxSetup({
