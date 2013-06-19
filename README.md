@@ -18,3 +18,5 @@ compound使用express做web端，jugglingdb做orm的adapter，juggling-mysql,jug
 ##后期目标
 
 由于nodejs的快速开发特性，我们可以方便融入对zeromq,thrift,redis等多种功能的支持，后期将用这些手段搭建一个或者多个平台级应用。
+
+linda's home test
