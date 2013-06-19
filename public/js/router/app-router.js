@@ -1,8 +1,8 @@
 define([ 'backbone','backbone-queryparams'], function(
 		Backbone) {
 	var options = {
-		oriRoutes : {
-			'newMail': 'writeNewMail',
+		routes : {
+			'newMail.html': 'writeNewMail',
 			'topics.html' : 'topiclist',
 			'topicDetail.html' : 'topicDetail',
 			"participants":"listParticipants",
@@ -10,7 +10,6 @@ define([ 'backbone','backbone-queryparams'], function(
       		"*anything": "anything"
 		},
 		
-		routes : {},
 		
 		writeNewMail: function(){
 			console.log("write a new mail");
@@ -54,9 +53,6 @@ define([ 'backbone','backbone-queryparams'], function(
 		}
 	};
 	
-	_.each(options.oriRoutes, function(v, k) {
-		options.routes[window.contextBase + k] = v
-	});
 
 	var AppRouter = Backbone.Router.extend(options);
 	return AppRouter;

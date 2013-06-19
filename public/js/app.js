@@ -72,6 +72,10 @@ define(['router/app-router', 'jquery','bootstrap','json2','jquery-plugin','const
 
     })
 
+
+	window.approuter=new AppRouter();
+    Backbone.history.start({pushState: true, root: '/'});
+	
     //window.currentUser = new User();
     
     /*$.when(window.currentUser.fetch()).then(function() {

@@ -42,9 +42,9 @@ module.exports = function (compound) {
         app.use(express.cookieParser('secret'));
         app.use(express.session({secret: 'secret'}));
         app.use(express.methodOverride());
-        app.use('/logout',cas_validate.logout({'cas_host':CAS_HOST ,'service':MY_HOST}))
-		app.use('/login',cas_validate.check_or_redirect({'cas_host':CAS_HOST,'service':MY_HOST}))
-        app.use("/",casmiddle)
+        // app.use('/logout',cas_validate.logout({'cas_host':CAS_HOST ,'service':MY_HOST}))
+		// app.use('/login',cas_validate.check_or_redirect({'cas_host':CAS_HOST,'service':MY_HOST}))
+        // app.use("/",casmiddle)
         app.use(app.router);
         
          
