@@ -2,3 +2,5 @@
 node_modules
 
 .project
+node_modules
+cas_validate.zip
