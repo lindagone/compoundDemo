@@ -1,15 +1,21 @@
 define([ 'backbone','backbone-queryparams'], function(
 		Backbone) {
 	var options = {
-		oriRoutes : {
+		routes : {
+			'newMail.html': 'writeNewMail',
 			'topics.html' : 'topiclist',
 			'topicDetail.html' : 'topicDetail',
 			"participants":"listParticipants",
 			":entity?*args": "query",
       		"*anything": "anything"
 		},
-
-		routes : {},
+		
+		
+		writeNewMail: function(){
+			console.log("write a new mail");
+			new NewMailView({root : $('#bodyContainer')});
+		},
+		
 		query: function(entity, args) {
 	      this.entity = entity;
 	      this.queryArgs = args;
@@ -47,9 +53,6 @@ define([ 'backbone','backbone-queryparams'], function(
 		}
 	};
 	
-	_.each(options.oriRoutes, function(v, k) {
-		options.routes[window.contextBase + k] = v
-	});
 
 	var AppRouter = Backbone.Router.extend(options);
 	return AppRouter;

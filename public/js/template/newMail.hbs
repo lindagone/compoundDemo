@@ -1,0 +1,203 @@
+<form action="#" class="form-horizontal">
+	<div class="control-group">
+		<label class="control-label">Input</label>
+		<div class="controls">
+			<input type="text" class="span6" />
+			<span class="help-inline">Supporting help text</span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Search</label>
+		<div class="controls">
+			<input type="text" class="search-query span6" />
+			<span class="help-inline">Supporting help text</span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Disabled</label>
+		<div class="controls">
+			<input class="span6" type="text" placeholder="Disabled input here..." disabled />
+			<span class="help-inline">Supporting help text</span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Input with Popover</label>
+		<div class="controls">
+			<input type="text" class="span6 popovers" data-trigger="hover" data-content="Popover body goes here. Popover body goes here." data-original-title="Popover header" />
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Input with Tooltip</label>
+		<div class="controls">
+			<input type="text" class="span6 tooltips" data-trigger="hover" data-original-title="Tooltip text goes here. Tooltip text goes here." />
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Auto Complete</label>
+		<div class="controls">
+			<input type="text" class="span6" style="margin: 0 auto;" data-provide="typeahead" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]' />
+			<p class="help-block">
+				Start typing to auto complete!. E.g: California
+			</p>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Email Address</label>
+		<div class="controls">
+			<div class="input-prepend">
+				<span class="add-on">@</span>
+				<input class=" " type="text" placeholder="Email Address" />
+			</div>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Currency</label>
+		<div class="controls">
+			<div class="input-prepend input-append">
+				<span class="add-on">$</span>
+				<input class=" " type="text" />
+				<span class="add-on">.00</span>
+			</div>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label"></label>
+		<div class="controls">
+			<div class="input-append">
+				<input class="span10" id="appendedInputButtons" type="text">
+				<button class="btn" type="button">
+					Search
+				</button>
+				<button class="btn" type="button">
+					Options
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label"></label>
+		<div class="controls">
+			<div class="input-append">
+				<input class="span10" id="appendedInputButton" type="text">
+				<button class="btn" type="button">
+					Go!
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label class="control-label"></label>
+		<div class="controls">
+			<div class="input-prepend input-append">
+				<div class="btn-group">
+					<button class="btn dropdown-toggle" data-toggle="dropdown">
+						Google <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#">Yahoo</a>
+						</li>
+						<li>
+							<a href="#">Bing</a>
+						</li>
+					</ul>
+				</div><!-- /btn-group -->
+				<input class="span10" id="appendedPrependedDropdownButton" type="text">
+				<button class="btn" type="submit">
+					<span class="icon icon-search"></span>
+				</button>
+			</div><!-- /input-prepend input-append -->
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label class="control-label"></label>
+		<div class="controls">
+			<div class="input-prepend input-append">
+				<div class="btn-group">
+					<button class="btn dropdown-toggle" data-toggle="dropdown">
+						Action <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#">Action</a>
+						</li>
+						<li>
+							<a href="#">Another action</a>
+						</li>
+						<li>
+							<a href="#">Something else here</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="#">Separated link</a>
+						</li>
+					</ul>
+				</div><!-- /btn-group -->
+				<input class="span10" id="appendedPrependedDropdownButton2" type="text">
+				<div class="btn-group">
+					<button class="btn dropdown-toggle" data-toggle="dropdown">
+						Action <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#">Action</a>
+						</li>
+						<li>
+							<a href="#">Another action</a>
+						</li>
+						<li>
+							<a href="#">Something else here</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="#">Separated link</a>
+						</li>
+					</ul>
+				</div><!-- /btn-group -->
+			</div><!-- /input-prepend input-append -->
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label class="control-label"></label>
+		<div class="controls">
+			<div class="input-append">
+				<input type="text">
+				<div class="btn-group">
+					<button class="btn" tabindex="-1">
+						Action
+					</button>
+					<button class="btn dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#">Action</a>
+						</li>
+						<li>
+							<a href="#">Another action</a>
+						</li>
+						<li>
+							<a href="#">Something else here</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="#">Separated link</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-actions">
+		<button type="submit" class="btn btn-primary">
+			Submit
+		</button>
+		<button type="button" class="btn btn-danger">
+			Cancel
+		</button>
+	</div>
+</form>

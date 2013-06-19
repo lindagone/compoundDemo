@@ -50,6 +50,7 @@ define(['router/app-router', 'jquery','bootstrap','json2','jquery-plugin','const
 	};
 
 	$(document).ready(function() {
+		SideBar.init();
       //$('[data-form=datepicker]').datepicker();
       //$('[data-form=uniform]').uniform()
       $.ajaxSetup({
@@ -71,6 +72,10 @@ define(['router/app-router', 'jquery','bootstrap','json2','jquery-plugin','const
 
     })
 
+
+	window.approuter=new AppRouter();
+    Backbone.history.start({pushState: true, root: '/'});
+	
     //window.currentUser = new User();
     
     /*$.when(window.currentUser.fetch()).then(function() {
